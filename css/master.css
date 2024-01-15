@@ -1,0 +1,280 @@
+
+body {
+  background: #316c7d url(../imgs/bg.png) repeat-x;
+  font-family: 'Roboto-Light';
+  font-size: 1em;
+}
+
+main#game {
+  margin: 0px auto;
+  width: 600px;
+}
+
+header#logo {
+  background: transparent url(../imgs/logo.png) no-repeat center center;
+  height: 142px;
+  margin: 30px auto;
+  width: 462px;
+}
+
+section#stage1 {
+
+}
+
+h1.title {
+  background-color: #943e77;
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.6em;
+  padding: 4px 0px;
+  margin-top: 80px;
+  margin-bottom: 46px;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+label.labelfield,
+input.textfield,
+select.selectfield {
+  display: inline-block;
+  padding: 10px;
+}
+
+label.labelfield {
+  background-color: #2f4666;
+  color: #fff;
+  width: 160px;
+}
+
+input.textfield {
+  background-color: #fff;
+  border: none;
+  color: #666;
+  font-size: 1em;
+  outline: none;
+  margin-left: -4px;
+  width: 396px;
+}
+
+select.selectfield {
+  background: #fff url(../imgs/dropdown.png) no-repeat 400px center;
+  border: none;
+  border-radius: 0px;
+  color: #666;
+  font-size: 1em;
+  outline: none;
+  margin-left: -4px;
+  width: 416px;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+button.btnaction {
+  background-color: #a3d900;
+  border: none;
+  color: #33735c;
+  outline: none;
+  padding: 8px 10px;
+  width: 230px;
+}
+
+section#stage1 button.btnaction {
+  margin-left: 366px;
+}
+
+button.btnaction:hover {
+  background-color: #b5ee06;
+  cursor: pointer;
+}
+
+table#gameinfo {
+  background-color: #943e77;
+  color: #3d1a31;
+  margin-top: 50px;
+  width: 100%;
+}
+
+table#gameinfo td {
+  padding: 8px;
+  width: 50%;
+}
+
+table#gameinfo td.bordert {
+  border-top: 2px solid #5a2949;
+}
+
+table#gameinfo td.borderl {
+  border-left: 2px solid #5a2949;
+}
+
+table#gameinfo td span {
+  color: #fff;
+}
+
+nav#hanoi {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 394px;
+}
+
+figure.towers {
+  background: rgba(255, 255, 255, 0.6) url(../imgs/tower.png) no-repeat center bottom;
+  display: inline-block;
+  height: 300px;
+  margin: 20px 0px 20px 13px;
+  vertical-align: top;
+  width: 180px;
+}
+
+section#stage2 button.btnaction {
+  width: 280px;
+}
+
+section#stage2 button#pause,
+section#stage2 button#resume {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+div.boxes {
+	height: 36px;
+	margin-bottom: 2px;
+	position: relative;
+	top: 92px;
+}
+
+span.disks em {
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-style: normal;
+  padding: 4px 10px;
+}
+
+span.disks {
+	border-radius: 20px;
+	color: #fff;
+	display: block;
+	position: relative;
+	font-size: 1em;
+	left: 0px;
+	line-height: 2.4em;
+	margin: 0 auto;
+	height: 100%;
+	top: 0px;
+  text-align: center;
+	width: 100%;
+  -webkit-animation: 0.2s animDisk ease-in 1;
+	        animation: 0.2s animDisk ease-in 1;
+}
+
+span.disks:hover {
+	cursor: move;
+}
+
+span#d1 {
+	background-color: DarkOrange;
+  color: DarkOrange;
+	width: 50px;
+}
+
+span#d2 {
+	background-color: MediumSeaGreen;
+  color: MediumSeaGreen;
+	width: 80px;
+
+}
+
+span#d3 {
+	background-color: CornflowerBlue;
+  color: CornflowerBlue;
+	width: 110px;
+}
+
+span#d4 {
+	background-color: BlueViolet;
+  color: BlueViolet;
+	width: 140px;
+}
+
+span#d5 {
+	background-color: FireBrick;
+  color: FireBrick;
+	width: 170px;
+}
+
+section#stage3 nav#hanoi  {
+  padding-top: 20px;
+  height: 284px;
+}
+
+section#stage3 h1 {
+  margin: 0px;
+  margin-top: 56px;
+}
+
+table.results {
+  border-collapse: collapse;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  width: 580px;
+}
+
+table.results th,
+table.results td {
+  border: 2px solid #5d8998;
+  padding: 10px 8px;
+
+}
+
+table.results th {
+  background-color: #316c7d;
+  color: #fff;
+}
+
+table.results td {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #346c7d;
+  text-align: center;
+}
+
+table.results tr.player td {
+  background-color: #fff;
+}
+
+section#stage3 button.btnaction  {
+  display: block;
+  margin: 0px auto;
+  width: 280px;
+}
+
+div#screenpause {
+  height: 340px;
+  width: 100%;
+}
+
+div#screenpause h2 {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 4em;
+  line-height: 6em;
+  text-align: center;
+  margin: 0px;
+}
+
+tr.hide {
+  display: none;
+}
+
+@-webkit-keyframes animDisk {
+	0%   { -webkit-transform: scale(0.4); }
+	90%  { -webkit-transform: scale(1.2); }
+	100% { -webkit-transform: scale(1);   }
+}
+@keyframes animDisk {
+	0%   { transform: scale(0.4); }
+	90%  { transform: scale(1.2); }
+	100% { transform: scale(1);   }
+}

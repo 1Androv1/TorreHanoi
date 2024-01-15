@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tower Hanoi - WorldSkills 2015</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/master.css">
+ <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico" />
+</head>
+<body onload="completo()">
+
+<main id="game">
+  <header id="logo"></header>
+  <!-- Stage1 -->
+  <section id="stage1">
+    <h1 class="title">PLEASE FILL INFORMATION PLAYER</h1>
+    <fieldset>
+      <label for="username" class="labelfield">USERNAME</label>
+      <input type="text" id="username" class="textfield">
+    </fieldset>
+    <fieldset>
+      <label for="difficulty" class="labelfield">DIFFICULTY</label>
+      <select id="difficulty" class="selectfield">
+        <option value="">Select...</option>
+        <option id="opcion1" class="opcion" value="3">3 Disks (Easy)</option>
+        <option id="opcion2" class="opcion" value="4">4 Disks (Medium)</option>
+        <option id="opcion3" class="opcion" value="5">5 Disks (Hard)</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <button id="start" class="btnaction">START</button>
+    </fieldset>
+  </section>
+  <!-- Stage2 -->
+  <section id="stage2">
+    <table id="gameinfo">
+      <tr>
+        <td>PLAYER: <span id="name1">Jeremias</span></td>
+        <td class="borderl">DIFFICULTY: <span id="level">3 Disks (Easy)</span></td>
+      </tr>
+      <tr>
+        <td class="bordert">TIME: <span id="time">0s</span></td>
+        <td class="bordert borderl">MOVES: <span id="move">12</span></td>
+      </tr>
+    </table>
+    <nav id="hanoi">
+      <figure id="tower1" class="towers">
+        
+      </figure>
+      <figure id="tower2" class="towers"></figure>
+      <figure id="tower3" class="towers"></figure>
+
+      <div id="screenpause">
+        <h2>PAUSE</h2>
+      </div>
+      
+      <button id="pause" class="btnaction">PAUSE</button>
+      <button id="restart" class="btnaction">RESTART</button>
+
+    </nav>
+  </section>
+  <!-- Stage3 -->
+  <section id="stage3">
+    <h1 class="title">RESULTS</h1>
+    <nav id="hanoi">
+      <table class="results">
+        <tr>
+          <th>#</th>
+          <th>PLAYER</th>
+          <th>DIFFICULTY</th>
+          <th>TIME</th>
+          <th>MOVES</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Jeremias</td>
+          <td>5 Disks (Hard)</td>
+          <td>120s</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Liza</td>
+          <td>5 Disks (Hard)</td>
+          <td>150s</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Barth</td>
+          <td>3 Disks (Easy)</td>
+          <td>230s</td>
+          <td>40</td>
+        </tr>
+        <tr class="player">
+          <td>8</td>
+          <td>Homero</td>
+          <td>3 Disks (Easy)</td>
+          <td>310s</td>
+          <td>60</td>
+        </tr>
+      </table>
+      <button id="restart" class="btnaction">RESTART</button>
+    </nav>
+  </section>
+</main>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/codigo.js"></script>
+</body>
+</html>
